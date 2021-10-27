@@ -166,6 +166,4 @@ for record in response_list:
             { '$set': { 'child record': child_record_id } }
         )
 
-# Call update script
-update.main()
 
