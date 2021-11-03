@@ -1,7 +1,7 @@
 import requests
 import json
 import sys
-from config import access_token, cloud_creds
+# from config import access_token, cloud_creds
 
 # Generate auth token
 iam_url = "https://iam.cloud.ibm.com/identity/token"
