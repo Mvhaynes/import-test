@@ -1,4 +1,5 @@
 config.py
 Untitled.ipynb
 *.ipynb
-main.py
+__pycache__
+update.py
