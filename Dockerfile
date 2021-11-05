@@ -1,6 +1,6 @@
 FROM python:3.8
 
-ADD main.py config.py .
+ADD main.py .
 
 RUN pip install requests
 
