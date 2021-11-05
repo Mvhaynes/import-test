@@ -15,7 +15,7 @@ iam_headers= {
     'Accept': 'application/json'
 }
 
-data = f"grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey={cloud_creds['apikey']}"
+data = f"grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey={cloud_creds}"
 
 resp = requests.post(iam_url, headers=iam_headers, data=data)
 resp = resp.json()
