@@ -3,7 +3,6 @@ import json
 import sys
 import os
 
-# from config import access_token, cloud_creds
 access_token = os.environ['access_token']
 cloud_creds = os.environ['cloud_creds']
 
