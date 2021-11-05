@@ -43,7 +43,7 @@ db_resp = requests.request("GET", all_db, headers=cloud_headers)
 
 # Error handling
 if db_resp.status_code != 200:
-    print('Unable to retrieve databases. Error: ', database_list['reason'])
+    print('Unable to retrieve databases. Error: ', db_resp['reason'])
     sys.exit(1)
     
 database_list = db_resp.json()
