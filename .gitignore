@@ -3,3 +3,5 @@ Untitled.ipynb
 *.ipynb
 __pycache__
 update.py
+log*
+api_*
