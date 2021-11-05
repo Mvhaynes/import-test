@@ -18,11 +18,13 @@ data = f"grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey={cloud_creds}"
 
 resp = requests.post(iam_url, headers=iam_headers, data=data)
 resp = resp.json()
-token = resp['access_token']
+
+if 'access_token' in resp.keys():
+    token = resp['access_token']
 
 # Error handling
-if 'errorCode' in resp.keys():
-    print(token['errorMessage'])
+elif 'errorCode' in resp.keys():
+    print(resp['errorMessage'])
     sys.exit(1)
 
 # Request headers
