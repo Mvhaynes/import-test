@@ -6,6 +6,9 @@ import os
 access_token = os.environ['access_token']
 cloud_creds = os.environ['cloud_creds']
 
+# Remove later
+print(access_token, cloud_creds)
+
 # Generate auth token
 iam_url = "https://iam.cloud.ibm.com/identity/token"
 
